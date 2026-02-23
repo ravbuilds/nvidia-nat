@@ -1,0 +1,25 @@
+[project]
+name = "nemo-agentic-realestate"
+version = "0.1.0"
+description = "Agentic AI app using NVIDIA NeMo + LangSmith + NIM"
+requires-python = ">=3.10"
+
+dependencies = [
+    "torch",
+    "transformers",
+    "datasets",
+    "peft",
+    "pandas",
+    "numpy",
+    "fastapi",
+    "uvicorn",
+    "nemo_toolkit[all]",
+    "langchain",
+    "langsmith",
+    "streamlit",
+    "requests",
+    "python-dotenv"
+]
+
+[tool.uv]
+dev-dependencies = ["black", "ruff"]

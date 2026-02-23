@@ -1,0 +1,15 @@
+models:
+  - type: main
+    engine: nim
+    model: llama3
+
+rails:
+  input:
+    flows:
+      - hallucination_check
+      - toxic_language
+
+  output:
+    flows:
+      - financial_advice_safety
+      - bias_mitigation
